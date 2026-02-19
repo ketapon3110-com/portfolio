@@ -133,71 +133,216 @@
 
       <!-- ここがモーダル内スライド -->
       <div class="modalDeck" data-deck>
-        <section class="deckSlide">
-          <div class="deckInner">
-            <p class="kicker">Work 1</p>
-            <h3 class="deckTitle">構造再設計 × パフォーマンス改善</h3>
-            <p class="text">
-              期間：約1年。リード：自分（設計・実装主導）/ サポート：ディレクター1名。全19名規模で推進。
-            </p>
-            <div class="stats stats--tight">
-              <div class="stat"><div class="stat__num">40% → 33%</div><div class="stat__label">ブランドTOP 直帰率</div></div>
-              <div class="stat"><div class="stat__num">50% → 35%</div><div class="stat__label">主要商品 直帰率</div></div>
-              <div class="stat"><div class="stat__num">10% → 20%</div><div class="stat__label">商品詳細→カート（主要）</div></div>
+      <!-- 1. 背景 -->
+      <section class="deckSlide">
+        <div class="deckInner">
+          <p class="kicker">Work 1 / ALOBABY</p>
+          <h3 class="deckTitle">背景：ブランド別の体験を作り切れていなかった</h3>
+          <p class="text">
+            自社EC内で複数ブランドを展開していたが、SOLIA SHOP共通のルールに寄せており、
+            ALOBABYとしての世界観や導線が最適化されていなかった。
+          </p>
+          <p class="text">
+            TOPから商品詳細までの直帰率が高く、
+            商品詳細からカート、カートから注文完了までの遷移率も十分ではなかった。
+            特に赤ちゃん向けブランドであるにもかかわらず、
+            デザインと情報構造が「共通テンプレート」寄りになっていたことが課題だった。
+          </p>
+    
+          <div class="stats stats--tight">
+            <div class="stat">
+              <div class="stat__num">40% → 33%</div>
+              <div class="stat__label">ブランドTOP直帰率</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">50% → 35%</div>
+              <div class="stat__label">主要商品詳細直帰率</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">10% → 20%</div>
+              <div class="stat__label">商品詳細→カート（主要商品）</div>
             </div>
           </div>
-        </section>
-
-        <section class="deckSlide">
-          <div class="deckInner">
-            <h3 class="deckTitle">構造再設計</h3>
+    
+          <div class="caseMeta">
+            <p>期間：およそ1年</p>
+            <p>体制：リード（自分）＋ディレクター1名／関連部署19名を巻き込み</p>
+            <p>役割：方向性設計／情報設計／UI設計／フロント実装／計測設計の実務を担当</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- 2. コンセプト -->
+      <section class="deckSlide">
+        <div class="deckInner">
+          <h3 class="deckTitle">コンセプト：「チャーミング × 高品質」</h3>
+          <p class="text">
+            赤ちゃん向け商材でありながら、品質や安全性の高さも伝えたい。
+            そこで「チャーミング（遊び心）と高品質の両立」を軸に、
+            オーガニックな世界観をベースにしたUIを設計した。
+          </p>
+          <p class="text">
+            大人っぽさに振り切り過ぎると親しみやすさが失われる。
+            逆に幼稚園サイトのような子どもっぽさに寄せ過ぎると、
+            プロダクトの信頼感が下がる。
+            両者の間でほどよいバランスを取ることをゴールにした。
+          </p>
+    
+          <div class="caseBlock">
+            <p class="label">避けたい方向性の例</p>
             <p class="text">
-              ブランド横断導線の優先度を下げ、TOP〜商品詳細をブランドごとに分離。ブランド別に体験とルールを最適化できる構造へ変更。
+              極端にスタイリッシュでシャープなトーン、
+              幼児向けサイトのような過度にポップなトーン、
+              ラグジュアリー寄りの高級感の強い表現などはすべてNGと定義した。
             </p>
-            <figure class="figure">
-              <img src="./assets/img/alobaby-structure.png" alt="サイト構造図" loading="lazy">
-              <figcaption>サイト構造（Before/After）</figcaption>
-            </figure>
           </div>
-        </section>
-
-        <section class="deckSlide">
-          <div class="deckInner">
-            <h3 class="deckTitle">UI設計（抜粋）</h3>
-            <p class="text">全ページのUI設計を行い、実装時の構造と速度も前提に設計。</p>
-            <figure class="figure">
-              <img src="./assets/img/alobaby-wire.png" alt="ワイヤー" loading="lazy">
-              <figcaption>ワイヤー（抜粋）</figcaption>
-            </figure>
+        </div>
+      </section>
+    
+      <!-- 3. 設計原則（UI/ビジュアル） -->
+      <section class="deckSlide">
+        <div class="deckInner">
+          <h3 class="deckTitle">UI設計原則：トーンと言語化したルール</h3>
+    
+          <div class="caseBlock">
+            <p class="label">レイアウトと構造</p>
+            <p class="text">
+              直線ベースのレイアウトを基本としつつ、
+              エッジは強くし過ぎず、角丸や余白でやわらかさを出した。
+              白をベースにしながら、余白を取り過ぎるとシャープになり過ぎるため、
+              商品画像とのバランスを見ながらグリッドとリズムを設計した。
+            </p>
           </div>
-        </section>
-
-        <section class="deckSlide">
-          <div class="deckInner">
-            <h3 class="deckTitle">パフォーマンス改善</h3>
-            <p class="big">LCP：5.3秒 → 2.4秒</p>
-            <p class="muted">PSI：5〜9 → 29〜35</p>
-
+    
+          <div class="caseBlock">
+            <p class="label">ビジュアルと撮影ディレクション</p>
+            <p class="text">
+              「ふわっとした柔らかさ」「素材の良さ」が伝わる写真を前提とし、
+              白〜淡い色のリネンやタオル、丸みのある新芽のようなグリーン、
+              小花（カモミールのようなイメージ）を小道具として指定した。
+            </p>
+            <p class="text">
+              人工的な光沢感のある素材や、強い色・硬さを感じる葉や花、
+              高級感のあるシャープな影などはNGとして、
+              撮影段階からトーンをコントロールした。
+            </p>
+          </div>
+    
+          <div class="caseBlock">
+            <p class="label">フォントとテキスト</p>
+            <p class="text">
+              ビジュアルでは游ゴシック系のAloフォントを基準に、
+              WebではGoogleフォントを利用しながら、
+              可読性とブランドらしさの両方を満たす組み合わせを採用。
+              日本語と英語の階層が分かりやすくなるようサイズ・ウェイトを整理した。
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- 4. 実装：構造再設計とパフォーマンス改善 -->
+      <section class="deckSlide">
+        <div class="deckInner">
+          <h3 class="deckTitle">実装：構造再設計 × パフォーマンス改善</h3>
+          <p class="text">
+            HTML／CSS／JavaScript／Liquid を全面的に組み直し、
+            ブランド専用のテンプレート構造に変更した。
+            TOP〜商品詳細までをブランドごとに分離し、
+            ALOBABY向けの導線とコンポーネントを優先できるようにした。
+          </p>
+    
+          <div class="caseBlock">
+            <p class="label">構造再設計</p>
+            <p class="text">
+              ブランドTOP、カテゴリ、商品詳細の階層を整理し、
+              商品一覧やレコメンドをコンポーネント化。
+              商品カードやCTAボタンのパターンを統一し、
+              各ページでの役割が明確になるようにした。
+            </p>
+          </div>
+    
+          <div class="caseBlock">
+            <p class="label">パフォーマンス改善</p>
+            <p class="text">
+              画像を WebP 化し、必要に応じて srcset と lazy-load を使用。
+              重要なファーストビュー画像はサイズ指定を徹底し、
+              CLSを抑制した。
+              不要なJavaScriptを削除し、依存ライブラリも見直した。
+            </p>
+    
             <div class="codeBlock">
-              <div class="codeBlock__title">コード例（短い抜粋）</div>
-              <pre><code>// 例：CLS抑制（画像のサイズ明示）
-&lt;img src="/assets/img/hero.webp" width="1200" height="800"
-  loading="eager" decoding="async" alt=""&gt;</code></pre>
+              <div class="codeBlock__title">例：LCPとCLSを意識した画像の扱い（抜粋）</div>
+    <pre><code>&lt;img
+      src="/assets/img/hero.webp"
+      width="1200"
+      height="800"
+      loading="eager"
+      decoding="async"
+      alt=""&gt;</code></pre>
             </div>
           </div>
-        </section>
+    
+          <div class="caseBlock">
+            <p class="label">計測設計</p>
+            <p class="text">
+              GA4でブランド別のファネルを計測できるよう、
+              流入パラメータやイベント設計を見直した。
+              TOP→商品詳細→カート→注文完了までを一連の流れとして追えるようにし、
+              リニューアル後の効果検証を可能にした。
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- 5. 結果 -->
+      <section class="deckSlide">
+        <div class="deckInner">
+          <h3 class="deckTitle">結果：CVR改善とオーガニック流入の増加</h3>
+          <p class="text">
+            UIの再設計とパフォーマンス改善、計測設計をまとめて行ったことで、
+            「体験が良くなったこと」と「改善効果の見える化」の両方を達成した。
+          </p>
+    
+          <div class="funnel">
+            <div class="funnel__row">
+              <div class="funnel__name">ブランドTOP直帰率</div>
+              <div class="funnel__val">40% → 33%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">主要商品詳細直帰率</div>
+              <div class="funnel__val">50% → 35%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">商品詳細→カート（主要）</div>
+              <div class="funnel__val">10% → 20%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">注文確認→注文完了</div>
+              <div class="funnel__val">56% → 68%</div>
+            </div>
+          </div>
+    
+          <div class="caseBlock">
+            <p class="label">パフォーマンス指標</p>
+            <p class="text">
+              LCPは 5.3秒 から 2.4秒 に短縮。
+              PSIスコアは5〜9点台からおおよそ30点前後まで改善した。
+            </p>
+          </div>
+    
+          <div class="caseBlock">
+            <p class="label">ビジネスインパクト</p>
+            <p class="text">
+              主要キーワードで検索順位1位を獲得し、
+              オーガニック流入は約212％増加。
+              初期離脱は約35ポイント改善し、CTRは約20ポイント、
+              CVRはおよそ5ポイント改善した。
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
-        <section class="deckSlide">
-          <div class="deckInner">
-            <h3 class="deckTitle">遷移改善（抜粋）</h3>
-            <div class="funnel">
-              <div class="funnel__row"><div class="funnel__name">TOP→商品詳細</div><div class="funnel__val">30% → 45%</div></div>
-              <div class="funnel__row"><div class="funnel__name">商品詳細→カート（主要）</div><div class="funnel__val">10% → 20%</div></div>
-              <div class="funnel__row"><div class="funnel__name">注文確認→注文完了</div><div class="funnel__val">56% → 68%</div></div>
-            </div>
-          </div>
-        </section>
-      </div>
 
       <!-- 右下のスライド移動（任意） -->
       <div class="deckNav">
