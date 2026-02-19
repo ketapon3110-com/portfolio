@@ -4,22 +4,267 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Keita Saito | Portfolio</title>
+  <meta name="description" content="フロントエンド実装を軸に、EC改善・分析まで行います。" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-  <h1>Keita Saito</h1>
-  <p>フロントエンド実装を主軸に、EC改善・分析まで行います。</p>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">Keita Saito</div>
+      <nav class="nav">
+        <a href="#top">Top</a>
+        <a href="#work-alobaby">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Work</h2>
-  <ul>
-    <li>Work 1（準備中）</li>
-    <li>Work 2（準備中）</li>
-    <li>Work 3（準備中）</li>
-  </ul>
+  <main class="deck" id="top">
 
-  <h2>Skills</h2>
-  <p>JavaScript / jQuery / TypeScript / Liquid / PHP / Python / SQL</p>
+    <!-- Slide: Hero -->
+    <section class="slide hero">
+      <div class="container">
+        <p class="kicker">Front-end Engineer × EC Growth</p>
+        <h1 class="title">設計から実装、改善まで一貫して担う</h1>
+        <p class="lead">
+          HTML / CSS / JavaScript / Liquid を中心に、体験設計とパフォーマンス改善、
+          計測設計までつなげて成果を出します。
+        </p>
 
-  <h2>Contact</h2>
-  <p>（メールやGitHubリンクを後で追加）</p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">5.3 → 2.4</div>
+            <div class="stat__label">LCP（秒）</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">+212%</div>
+            <div class="stat__label">オーガニック流入</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">CVR +5pt</div>
+            <div class="stat__label">リニューアル後</div>
+          </div>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn" href="#work-alobaby">代表実績を見る</a>
+          <a class="btn btn--ghost" href="#contact">連絡先</a>
+        </div>
+      </div>
+      <div class="slideFooter">
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- Slide: Work Intro -->
+    <section class="slide" id="work-alobaby">
+      <div class="container">
+        <h2 class="h2">Work</h2>
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <h3 class="h3">ALOBABY ブランドサイト リニューアル</h3>
+              <p class="muted">主軸：構造再設計 / パフォーマンス改善（約1年）</p>
+            </div>
+            <button class="btn btn--small" data-open-modal="modal-alobaby">画像を拡大</button>
+          </div>
+
+          <div class="grid2">
+            <div>
+              <p class="label">背景</p>
+              <p class="text">
+                ブランド横断の共通設計により、ブランド体験の最適化が難しく、
+                TOP〜商品詳細の直帰率が高い状態。商品詳細→カート→注文完了の遷移も伸び悩み。
+              </p>
+
+              <p class="label">体制</p>
+              <p class="text">
+                リード：自分（設計・実装主導） / サポート：ディレクター1名。
+                関係部署を含め全19名規模で推進。
+              </p>
+            </div>
+
+            <div>
+              <p class="label">自分の担当</p>
+              <p class="text">
+                方針立案（事前に方向性を設計）→社内提案・調整→UI設計（全ページ）→
+                HTML/CSS/JavaScript/Liquid実装→パフォーマンス改善。
+                最終意思決定は上司・社長承認。
+              </p>
+
+              <p class="label">使用技術</p>
+              <p class="text">HTML / CSS / JavaScript / Liquid（ECForce）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide: Structure Redesign -->
+    <section class="slide">
+      <div class="container">
+        <h2 class="h2">構造再設計</h2>
+        <div class="card">
+          <p class="text">
+            ブランド間クロスの優先度を下げ、TOP〜商品詳細をブランドごとに分離。
+            体験とルール（見せ方・導線）をブランド単位で最適化できる構造へ変更。
+          </p>
+
+          <div class="imgRow">
+            <figure class="figure">
+              <img src="./assets/img/alobaby-structure.png" alt="サイト構造図" loading="lazy">
+              <figcaption>サイト構造（Before/Afterを説明する図）</figcaption>
+            </figure>
+          </div>
+
+          <div class="stats stats--tight">
+            <div class="stat">
+              <div class="stat__num">40% → 33%</div>
+              <div class="stat__label">ブランドTOP 直帰率</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">50% → 35%</div>
+              <div class="stat__label">主要商品ページ 直帰率</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">30% → 45%</div>
+              <div class="stat__label">TOP→商品詳細 遷移</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide: Performance -->
+    <section class="slide">
+      <div class="container">
+        <h2 class="h2">パフォーマンス改善</h2>
+        <div class="card">
+          <div class="grid2">
+            <div>
+              <p class="label">改善前 → 改善後</p>
+              <p class="big">LCP：5.3秒 → 2.4秒</p>
+              <p class="muted">PSI：5〜9 → 29〜35</p>
+            </div>
+            <div>
+              <p class="label">主な施策</p>
+              <p class="text">
+                画像のWebP化、読み込み順序の最適化、不要なJavaScriptの整理、
+                レンダリングを止める要因の削減、レイアウトずれ対策（画像サイズ明示）など。
+              </p>
+            </div>
+          </div>
+
+          <div class="codeBlock">
+            <div class="codeBlock__title">コード例（短い抜粋）</div>
+            <pre><code>// 例：画像のレイアウトずれ対策（CLS抑制）
+// 改善前：サイズ未指定で読み込み後にズレる
+// &lt;img src="hero.jpg"&gt;
+
+// 改善後：width/heightを明示し、ズレを抑える
+// （実際はテンプレート都合に合わせてLiquid側で出し分け）
+&lt;img src="/assets/img/hero.webp" width="1200" height="800" loading="eager" decoding="async" alt=""&gt;
+</code></pre>
+            <p class="muted">※固有情報は伏字・置換でOK。差分と狙いが伝われば十分。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide: Funnel -->
+    <section class="slide">
+      <div class="container">
+        <h2 class="h2">遷移改善</h2>
+        <div class="card">
+          <p class="text">
+            商品詳細→カート以降の遷移を段階で改善。主要商品だけでなく、サブ商材・その他商材も底上げ。
+          </p>
+
+          <div class="funnel">
+            <div class="funnel__row">
+              <div class="funnel__name">商品詳細 → カート（主要）</div>
+              <div class="funnel__val">10% → 20%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">商品詳細 → カート（サブ）</div>
+              <div class="funnel__val">6% → 10%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">商品詳細 → カート（その他）</div>
+              <div class="funnel__val">4% → 8%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">カート → ご注文入力/ログイン</div>
+              <div class="funnel__val">54% → 62%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">ご注文入力/ログイン → 注文確認</div>
+              <div class="funnel__val">42% → 49%</div>
+            </div>
+            <div class="funnel__row">
+              <div class="funnel__name">注文確認 → 注文完了</div>
+              <div class="funnel__val">56% → 68%</div>
+            </div>
+          </div>
+
+          <p class="muted">※数値はプロジェクト内の主要指標より。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide: Skills -->
+    <section class="slide" id="skills">
+      <div class="container">
+        <h2 class="h2">Skills</h2>
+        <div class="card">
+          <div class="grid2">
+            <div>
+              <p class="label">実装</p>
+              <p class="text">JavaScript / jQuery / TypeScript / HTML / CSS / Liquid / PHP</p>
+            </div>
+            <div>
+              <p class="label">分析・改善</p>
+              <p class="text">GA4 設計 / SQL / Python（分析）/ パフォーマンス改善</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide: Contact -->
+    <section class="slide" id="contact">
+      <div class="container">
+        <h2 class="h2">Contact</h2>
+        <div class="card">
+          <p class="text">メールとGitHubリンクを掲載（応募先に合わせて公開範囲を調整）</p>
+          <div class="contactRow">
+            <a class="btn btn--ghost" href="https://github.com/ketapon3110-ai" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email</a>
+          </div>
+          <p class="muted">このサイトはNetlifyで公開し、Basic認証を設定しています。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal-alobaby" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Images">
+      <div class="modal__head">
+        <div class="modal__title">ALOBABY リニューアル（資料）</div>
+        <button class="btn btn--small" data-close-modal>閉じる</button>
+      </div>
+      <div class="modal__body">
+        <img src="./assets/img/alobaby-wire.png" alt="ワイヤー" loading="lazy">
+        <img src="./assets/img/alobaby-before.png" alt="Before" loading="lazy">
+        <img src="./assets/img/alobaby-after.png" alt="After" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
 </body>
 </html>
