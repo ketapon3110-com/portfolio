@@ -18,6 +18,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "FuturaPT";
+  src: url("./fonts/FuturaCyrillicBold.ttf") format("truetype"),
+       url("./fonts/FuturaCyrillicBook.ttf") format("truetype"),
+       url("./fonts/FuturaCyrillicDemi.ttf") format("truetype"),
+       url("./fonts/FuturaCyrillicExtraBold.ttf") format("truetype"),
+       url("./fonts/FuturaCyrillicHeavy.ttf") format("truetype"),
+       url("./fonts/FuturaCyrillicLight.ttf") format("truetype"),
+       url("./fonts/FuturaCyrillicMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html, body {
   margin: 0;
   padding: 0;
