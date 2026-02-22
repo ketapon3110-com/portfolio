@@ -1,6 +1,14 @@
 /* -----------------------------------
    Base
 ----------------------------------- */
+@font-face {
+  font-family: "DenkiChip";
+  src: url("./fonts/x8y12pxDenkiChip.woff2") format("woff2"),
+       url("./fonts/x8y12pxDenkiChip.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html, body {
   margin: 0;
   padding: 0;
