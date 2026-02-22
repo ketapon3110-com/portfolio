@@ -1,358 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <title>Keita Saito | Portfolio</title>
-  <meta name="description" content="フロント実装を軸に、EC改善・分析まで行います。" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./main.js" />
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/maru-monica-font/index.css">
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="topbar__inner">
-      <div class="brand">Keita Saito</div>
-      <nav class="nav">
-        <a href="#works">Works</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page">
-    <section class="heroSection" id="top">
-      <div class="container">
-        <p class="kicker">Front-end Engineer × EC Growth</p>
-        <h1 class="title">設計から実装、改善まで一貫して担う</h1>
-        <p class="lead">
-          HTML / CSS / JavaScript / Liquid を中心に、体験設計とパフォーマンス改善、計測設計までつなげて成果を出します。
-        </p>
-
-        <div class="stats">
-          <div class="stat">
-            <div class="stat__num">5.3 → 2.4</div>
-            <div class="stat__label">LCP（秒）</div>
-          </div>
-          <div class="stat">
-            <div class="stat__num">+212%</div>
-            <div class="stat__label">オーガニック流入</div>
-          </div>
-          <div class="stat">
-            <div class="stat__num">CVR +5pt</div>
-            <div class="stat__label">リニューアル後</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="works">
-      <div class="container">
-        <h2 class="h2">Works</h2>
-
-        <div class="workGrid">
-          <article class="workCard">
-            <div class="workCard__head">
-              <h3 class="h3">ALOBABY ブランドサイト リニューアル</h3>
-              <p class="muted">構造再設計 / パフォーマンス改善 / HTML・CSS・JS・Liquid</p>
-            </div>
-            <div class="workCard__meta">
-              <div class="pill">LCP 5.3→2.4s</div>
-              <div class="pill">流入 +212%</div>
-              <div class="pill">CVR +5pt</div>
-            </div>
-            <div class="workCard__actions">
-              <button class="btn" data-open-modal="modal-alobaby">詳しく見る</button>
-            </div>
-          </article>
-
-          <article class="workCard">
-            <div class="workCard__head">
-              <h3 class="h3">実績②（例：GA4 計測設計・分析基盤）</h3>
-              <p class="muted">計測設計 / ダッシュボード / 施策検証</p>
-            </div>
-            <div class="workCard__actions">
-              <button class="btn btn--ghost" disabled>準備中</button>
-            </div>
-          </article>
-
-          <article class="workCard">
-            <div class="workCard__head">
-              <h3 class="h3">実績③（例：ECForceのUI実装）</h3>
-              <p class="muted">SKU切替 / カート投入 / UI改善</p>
-            </div>
-            <div class="workCard__actions">
-              <button class="btn btn--ghost" disabled>準備中</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <h2 class="h2">Skills</h2>
-        <div class="card">
-          <div class="grid2">
-            <div>
-              <p class="label">実装</p>
-              <p class="text">JavaScript / jQuery / TypeScript / HTML / CSS / Liquid / PHP</p>
-            </div>
-            <div>
-              <p class="label">改善・分析</p>
-              <p class="text">Webパフォーマンス改善 / GA4設計 / SQL / Python（分析）</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <h2 class="h2">Contact</h2>
-        <div class="card">
-          <div class="contactRow">
-            <a class="btn btn--ghost" href="https://github.com/ketapon3110-ai" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email</a>
-          </div>
-          <p class="muted">閲覧は認証が必要です。</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ALOBABY Modal（ここが“スライド式”） -->
-  <div class="modal" id="modal-alobaby" aria-hidden="true">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__panel modal__panel--deck" role="dialog" aria-modal="true" aria-label="ALOBABY Case Study">
-      <div class="modal__head">
-        <div class="modal__title">ALOBABY リニューアル（ケーススタディ）</div>
-        <button class="btn btn--small" data-close-modal>閉じる</button>
-      </div>
-
-      <!-- ここがモーダル内スライド -->
-      <div class="modalDeck" data-deck>
-      <!-- 1. 背景 -->
-      <section class="deckSlide">
-        <div class="deckInner">
-          <p class="kicker">Work 1 / ALOBABY</p>
-          <h3 class="deckTitle">背景：ブランド別の体験を作り切れていなかった</h3>
-          <p class="text">
-            自社EC内で複数ブランドを展開していたが、SOLIA SHOP共通のルールに寄せており、
-            ALOBABYとしての世界観や導線が最適化されていなかった。
-          </p>
-          <p class="text">
-            TOPから商品詳細までの直帰率が高く、
-            商品詳細からカート、カートから注文完了までの遷移率も十分ではなかった。
-            特に赤ちゃん向けブランドであるにもかかわらず、
-            デザインと情報構造が「共通テンプレート」寄りになっていたことが課題だった。
-          </p>
-    
-          <div class="stats stats--tight">
-            <div class="stat">
-              <div class="stat__num">40% → 33%</div>
-              <div class="stat__label">ブランドTOP直帰率</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">50% → 35%</div>
-              <div class="stat__label">主要商品詳細直帰率</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">10% → 20%</div>
-              <div class="stat__label">商品詳細→カート（主要商品）</div>
-            </div>
-          </div>
-    
-          <div class="caseMeta">
-            <p>期間：およそ1年</p>
-            <p>体制：リード（自分）＋ディレクター1名／関連部署19名を巻き込み</p>
-            <p>役割：方向性設計／情報設計／UI設計／フロント実装／計測設計の実務を担当</p>
-          </div>
-        </div>
-      </section>
-    
-      <!-- 2. コンセプト -->
-      <section class="deckSlide">
-        <div class="deckInner">
-          <h3 class="deckTitle">コンセプト：「チャーミング × 高品質」</h3>
-          <p class="text">
-            赤ちゃん向け商材でありながら、品質や安全性の高さも伝えたい。
-            そこで「チャーミング（遊び心）と高品質の両立」を軸に、
-            オーガニックな世界観をベースにしたUIを設計した。
-          </p>
-          <p class="text">
-            大人っぽさに振り切り過ぎると親しみやすさが失われる。
-            逆に幼稚園サイトのような子どもっぽさに寄せ過ぎると、
-            プロダクトの信頼感が下がる。
-            両者の間でほどよいバランスを取ることをゴールにした。
-          </p>
-    
-          <div class="caseBlock">
-            <p class="label">避けたい方向性の例</p>
-            <p class="text">
-              極端にスタイリッシュでシャープなトーン、
-              幼児向けサイトのような過度にポップなトーン、
-              ラグジュアリー寄りの高級感の強い表現などはすべてNGと定義した。
-            </p>
-          </div>
-        </div>
-      </section>
-    
-      <!-- 3. 設計原則（UI/ビジュアル） -->
-      <section class="deckSlide">
-        <div class="deckInner">
-          <h3 class="deckTitle">UI設計原則：トーンと言語化したルール</h3>
-    
-          <div class="caseBlock">
-            <p class="label">レイアウトと構造</p>
-            <p class="text">
-              直線ベースのレイアウトを基本としつつ、
-              エッジは強くし過ぎず、角丸や余白でやわらかさを出した。
-              白をベースにしながら、余白を取り過ぎるとシャープになり過ぎるため、
-              商品画像とのバランスを見ながらグリッドとリズムを設計した。
-            </p>
-          </div>
-    
-          <div class="caseBlock">
-            <p class="label">ビジュアルと撮影ディレクション</p>
-            <p class="text">
-              「ふわっとした柔らかさ」「素材の良さ」が伝わる写真を前提とし、
-              白〜淡い色のリネンやタオル、丸みのある新芽のようなグリーン、
-              小花（カモミールのようなイメージ）を小道具として指定した。
-            </p>
-            <p class="text">
-              人工的な光沢感のある素材や、強い色・硬さを感じる葉や花、
-              高級感のあるシャープな影などはNGとして、
-              撮影段階からトーンをコントロールした。
-            </p>
-          </div>
-    
-          <div class="caseBlock">
-            <p class="label">フォントとテキスト</p>
-            <p class="text">
-              ビジュアルでは游ゴシック系のAloフォントを基準に、
-              WebではGoogleフォントを利用しながら、
-              可読性とブランドらしさの両方を満たす組み合わせを採用。
-              日本語と英語の階層が分かりやすくなるようサイズ・ウェイトを整理した。
-            </p>
-          </div>
-        </div>
-      </section>
-    
-      <!-- 4. 実装：構造再設計とパフォーマンス改善 -->
-      <section class="deckSlide">
-        <div class="deckInner">
-          <h3 class="deckTitle">実装：構造再設計 × パフォーマンス改善</h3>
-          <p class="text">
-            HTML／CSS／JavaScript／Liquid を全面的に組み直し、
-            ブランド専用のテンプレート構造に変更した。
-            TOP〜商品詳細までをブランドごとに分離し、
-            ALOBABY向けの導線とコンポーネントを優先できるようにした。
-          </p>
-    
-          <div class="caseBlock">
-            <p class="label">構造再設計</p>
-            <p class="text">
-              ブランドTOP、カテゴリ、商品詳細の階層を整理し、
-              商品一覧やレコメンドをコンポーネント化。
-              商品カードやCTAボタンのパターンを統一し、
-              各ページでの役割が明確になるようにした。
-            </p>
-          </div>
-    
-          <div class="caseBlock">
-            <p class="label">パフォーマンス改善</p>
-            <p class="text">
-              画像を WebP 化し、必要に応じて srcset と lazy-load を使用。
-              重要なファーストビュー画像はサイズ指定を徹底し、
-              CLSを抑制した。
-              不要なJavaScriptを削除し、依存ライブラリも見直した。
-            </p>
-    
-            <div class="codeBlock">
-              <div class="codeBlock__title">例：LCPとCLSを意識した画像の扱い（抜粋）</div>
-    <pre><code>&lt;img
-      src="/assets/img/hero.webp"
-      width="1200"
-      height="800"
-      loading="eager"
-      decoding="async"
-      alt=""&gt;</code></pre>
-            </div>
-          </div>
-    
-          <div class="caseBlock">
-            <p class="label">計測設計</p>
-            <p class="text">
-              GA4でブランド別のファネルを計測できるよう、
-              流入パラメータやイベント設計を見直した。
-              TOP→商品詳細→カート→注文完了までを一連の流れとして追えるようにし、
-              リニューアル後の効果検証を可能にした。
-            </p>
-          </div>
-        </div>
-      </section>
-    
-      <!-- 5. 結果 -->
-      <section class="deckSlide">
-        <div class="deckInner">
-          <h3 class="deckTitle">結果：CVR改善とオーガニック流入の増加</h3>
-          <p class="text">
-            UIの再設計とパフォーマンス改善、計測設計をまとめて行ったことで、
-            「体験が良くなったこと」と「改善効果の見える化」の両方を達成した。
-          </p>
-    
-          <div class="funnel">
-            <div class="funnel__row">
-              <div class="funnel__name">ブランドTOP直帰率</div>
-              <div class="funnel__val">40% → 33%</div>
-            </div>
-            <div class="funnel__row">
-              <div class="funnel__name">主要商品詳細直帰率</div>
-              <div class="funnel__val">50% → 35%</div>
-            </div>
-            <div class="funnel__row">
-              <div class="funnel__name">商品詳細→カート（主要）</div>
-              <div class="funnel__val">10% → 20%</div>
-            </div>
-            <div class="funnel__row">
-              <div class="funnel__name">注文確認→注文完了</div>
-              <div class="funnel__val">56% → 68%</div>
-            </div>
-          </div>
-    
-          <div class="caseBlock">
-            <p class="label">パフォーマンス指標</p>
-            <p class="text">
-              LCPは 5.3秒 から 2.4秒 に短縮。
-              PSIスコアは5〜9点台からおおよそ30点前後まで改善した。
-            </p>
-          </div>
-    
-          <div class="caseBlock">
-            <p class="label">ビジネスインパクト</p>
-            <p class="text">
-              主要キーワードで検索順位1位を獲得し、
-              オーガニック流入は約212％増加。
-              初期離脱は約35ポイント改善し、CTRは約20ポイント、
-              CVRはおよそ5ポイント改善した。
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-
-      <!-- 右下のスライド移動（任意） -->
-      <div class="deckNav">
-        <button class="btn btn--small btn--ghost" data-deck-prev>前へ</button>
-        <button class="btn btn--small" data-deck-next>次へ</button>
-      </div>
-    </div>
+<header class="topbar">
+  <div class="topbar__inner">
+    <div class="brand">Keita Saito</div>
+    <nav class="nav">
+      <a href="#works">Works</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <script src="./main.js"></script>
+<main class="page">
+
+  <!-- FV -->
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="kicker">Front-end Engineer × EC Growth</p>
+      <h1 class="title">設計から実装・改善まで一貫して担当</h1>
+      <p class="lead">HTML / CSS / JavaScript / Liquid を中心に、UX改善と計測設計で成果を出します。</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>ABOUT</h2>
+      <p>
+        EC × フロント実装 × CRM分析を強みとするエンジニア・デザイナー。<br>
+        ブランド体験を高めるUX設計や、データ分析起点の改善を得意とします。
+      </p>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="works" id="works">
+    <div class="container">
+      <h2>WORKS</h2>
+
+      <div class="work-list">
+
+        <a class="work-card" href="./works/alobaby.html">
+          <h3>ALOBABY ブランドサイト リニューアル</h3>
+          <p>デザイン・UI設計・実装・計測改善</p>
+        </a>
+
+        <a class="work-card" href="./works/crm.html">
+          <h3>CRM改善（継続率・LTV施策）</h3>
+          <p>SQL/Python分析・導線改善・同梱施策など</p>
+        </a>
+
+        <a class="work-card" href="./works/design.html">
+          <h3>デザイン制作</h3>
+          <p>ページデザイン・バナー制作</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>SKILLS</h2>
+      <p>HTML / CSS / JavaScript / Liquid / BigQuery / SQL / Python / UX改善 / CRM設計</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>CONTACT</h2>
+      <p>ご連絡は以下へお願いします。</p>
+      <p>ketapon3110@gmail.com</p>
+    </div>
+  </section>
+
+</main>
+
 </body>
 </html>
