@@ -209,12 +209,13 @@ flex-wrap: wrap;
     padding-inline-start: 0;
     list-style-type: none;
     display: flex;
+       flex-wrap: wrap;
 }
 
 .work-card li {
     background: #ffecfc;
     padding: 0 10px;
-    margin: 0 5px;
+    margin: 5px;
     border-radius: 50px;
 }
 
