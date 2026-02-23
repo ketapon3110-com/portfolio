@@ -255,6 +255,26 @@ hr {
 .btnarrow-right:hover::after {
     right: -5%;
 }
+.works__subImg {
+    width: 100%;
+    margin: 110px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 4.55%;
+    align-items: center;
+    justify-content: center;
+}
+.works__subImg.works__subImg--website {
+    max-width: 848px;
+    align-items: start;
+    gap: 0 9.43%;
+}
+.works__pcImg {
+    width: 583px;
+}
+.works__spImg {
+    width: 133px;
+}
 
 @media screen and (min-width: 768px) {
     .works-single {
