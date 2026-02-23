@@ -23,6 +23,10 @@ font-family: 'Nanum Gothic';
   font-display: swap;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
     color: #000;
     font-family:"Nanum Gothic","游ゴシック体", "YuGothic","メイリオ","Zen Maru Gothic", serif;
