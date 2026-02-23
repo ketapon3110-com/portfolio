@@ -6,6 +6,7 @@
   if (loading && percentEl && barFillEl) {
     var assetsReady = false;   // フォント＋ページ読み込み完了
     var animDone = false;      // 0→100% のアニメーション完了
+    var hideStarted = false;
 
     // フォント読み込み状態を取得できる環境なら待つ
     var fontReady = (document.fonts && document.fonts.ready)
@@ -49,9 +50,13 @@
 
     // 両方そろったらローディングを消す
     function tryHideLoading() {
-      if (!assetsReady || !animDone) return;
-      loading.classList.add('is-hidden');
-    }
+      if (!assetsReady || !animDone || hideStarted) return;
+
+      hideStarted = true;
+
+      setTimeout(function () {
+        loading.classList.add('is-hidden');
+      }, 500);
   }
 
   // ここからアンカーリンクのスムーススクロール
