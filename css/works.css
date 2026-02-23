@@ -339,6 +339,15 @@ hr {
         .works__subImg.works__subImg--website {
         margin: 20px auto 0;
     }
+    .item-under dt {
+    width: fit-content;
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    }
+    h3.case-section__subtitle {
+        margin: 15px 0;
+    }
 
 }
 
