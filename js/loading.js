@@ -3,10 +3,11 @@
   var percentEl = document.getElementById('loading-percent');
   var barFillEl = document.getElementById('loading-barFill');
 
+  // ローディング要素がないページでは何もしない
   if (loading && percentEl && barFillEl) {
     var assetsReady = false;   // フォント＋ページ読み込み完了
     var animDone = false;      // 0→100% のアニメーション完了
-    var hideStarted = false;
+    var hideStarted = false;   // フェードアウト開始済みかどうか
 
     // フォント読み込み状態を取得できる環境なら待つ
     var fontReady = (document.fonts && document.fonts.ready)
@@ -24,7 +25,7 @@
     // 0→100% の簡易アニメーション
     var duration = 1000; // ミリ秒。ここが「最低見せたい時間」
     var startTime = null;
-    var lastPercent = 0;
+    var lastPercent = -1;
 
     function step(timestamp) {
       if (!startTime) startTime = timestamp;
@@ -48,15 +49,16 @@
 
     requestAnimationFrame(step);
 
-    // 両方そろったらローディングを消す
+    // フォント＆ページ読み込み完了＋アニメ完了 → 0.5秒待ってからフェードアウト
     function tryHideLoading() {
       if (!assetsReady || !animDone || hideStarted) return;
 
-      hideStarted = true;
+      hideStarted = true; // 二重実行防止
 
       setTimeout(function () {
         loading.classList.add('is-hidden');
-      }, 500);
+      }, 500); // 500ms = 0.5秒待つ
+    }
   }
 
   // ここからアンカーリンクのスムーススクロール
@@ -65,7 +67,6 @@
     if (!link) return;
 
     var href = link.getAttribute('href');
-    // href="#" は無視
     if (!href || href === '#') return;
 
     var id = href.slice(1);
