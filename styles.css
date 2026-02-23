@@ -132,7 +132,7 @@ section h2 {
     font-size: 35px;
     border-bottom: 2px dashed #000;
     width: fit-content;
-    margin: 70px auto 32px;
+    margin: 70px auto 50px;
 }
 
 .work-list {
@@ -141,6 +141,7 @@ section h2 {
 flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
+   margin-bottom: 100px;
     
 }
 
