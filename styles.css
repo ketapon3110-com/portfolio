@@ -242,6 +242,107 @@ flex-wrap: wrap;
 }
 
 /* -----------------------------------
+   work detail
+----------------------------------- */
+.case-page {
+  font-family: "FuturaPT", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.case {
+  padding: 80px 0 120px;
+}
+
+.case-hero {
+  padding: 80px 24px 60px;
+}
+
+.case-hero__inner,
+.case-section__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-hero__label {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.case-hero__title {
+  font-size: 28px;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.case-hero__subtitle {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.case-hero__meta p {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.case-hero__meta span {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.case-hero__visual {
+  margin-top: 32px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.05);
+}
+
+.case-hero__visual img {
+  width: 100%;
+  display: block;
+}
+
+.case-section {
+  padding: 60px 24px;
+}
+
+.case-section--gray {
+  background: #fafafa;
+}
+
+.case-section__title {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.case-section__lead {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.case-section__subtitle {
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.case-back {
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+  padding-bottom: 2px;
+}
+
+.case-section--back {
+  padding-top: 20px;
+}
+
+/* -----------------------------------
    Responsive
 ----------------------------------- */
 @media (max-width: 600px) {
@@ -258,3 +359,4 @@ flex-wrap: wrap;
     font-size: 20px;
   }
 }
+
