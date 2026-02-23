@@ -334,6 +334,9 @@ hr {
     .view-more.is-works a {
         font-size: 12px;
     }
+        .works__subImg.works__subImg--website {
+        margin: 20px auto 0;
+    }
 
 }
 
