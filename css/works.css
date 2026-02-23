@@ -86,7 +86,7 @@ h3.case-section__subtitle {
 
 .term-list {
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
