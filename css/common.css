@@ -110,6 +110,32 @@ small {
   width: 80px; 
 }
 
+.topbar {
+    position: sticky;
+    top: 0;
+    background: #ffffffcc;
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #eee;
+    z-index: 10;
+}
+.topbar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+.brand {
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav a {
+    margin-left: 24px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
 
 footer {
   padding: 5vh 0;
