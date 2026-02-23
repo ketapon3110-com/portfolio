@@ -95,7 +95,7 @@ h3.case-section__subtitle {
 }
 
 .term-list li {
-    min-width: 66px;
+    min-width: 20px;
     padding: 2px 15px;
     margin-bottom: 10px;
     border: solid 1px;
