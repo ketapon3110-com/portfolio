@@ -27,6 +27,10 @@ font-family: 'Nanum Gothic';
   box-sizing: border-box;
 }
 
+/* -----------------------------------
+   Loading Screen
+----------------------------------- */
+
 #loading-screen {
   position: fixed;
   inset: 0;
@@ -40,7 +44,6 @@ font-family: 'Nanum Gothic';
   transition: opacity 0.5s ease;
 }
 
-/* フェードアウト後に無効化する用のクラス */
 #loading-screen.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -61,9 +64,34 @@ font-family: 'Nanum Gothic';
 .loading-screen__title {
   font-size: 20px;
   letter-spacing: 0.18em;
+  margin-bottom: 16px;
 }
 
-/* スマホ向けに少しだけサイズ調整 */
+/* ここから進捗表示用 */
+.loading-screen__percent {
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+
+.loading-screen__bar {
+  width: 180px;
+  height: 4px;
+  border-radius: 999px;
+  background: #eee;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.loading-screen__barFill {
+  width: 0%;
+  height: 100%;
+  background: #222;
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.08s linear;
+}
+
 @media (max-width: 600px) {
   .loading-screen__title {
     font-size: 16px;
