@@ -38,11 +38,6 @@ body .futura {
    font-family: "FuturaPT", sans-serif;
 }
 
-body {
-  -webkit-font-smoothing: none;
-  image-rendering: pixelated;
-}
-
 img {
   max-width: 100%;
   display: block;
