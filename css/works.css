@@ -268,6 +268,7 @@ hr {
     max-width: 848px;
     align-items: start;
     gap: 0 9.43%;
+    margin-bottom: 70px;
 }
 .works__pcImg {
     width: 583px;
