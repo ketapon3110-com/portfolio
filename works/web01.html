@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/top.css">
   <link rel="stylesheet" href="../css/works.css" />
+  <link rel="stylesheet" href="../css/plide-core.min.css" />
+  <script src="../js/splide.min.js"></script>
 </head>
 <body class="case-page">
 
@@ -32,7 +34,50 @@
 		<div class="content-wrapper">
         <div class="item-left">
         <div class="eyecatch">
-          <img src="https://ketapon3110-ai.github.io/portfolio/img/web01.jpg" alt="">
+			<div class="slider">
+		      <section class="splide" aria-label="Splideの基本的なHTML">
+		        <div class="splide-wrapper">
+		        <div class="splide__track">
+		          <div class="splide__list">
+		            <div class="splide__slide">
+		              <img src="https://ketapon3110-ai.github.io/portfolio/img/web01.jpg" width="100%" heigt="auto">
+		            </div>
+		            <div class="splide__slide">
+		              <img src="https://ketapon3110-ai.github.io/portfolio/img/web01_slider01.png" width="100%" heigt="auto">
+		            </div>
+		            <div class="splide__slide">
+		              <img src="https://ketapon3110-ai.github.io/portfolio/img/web01_slider02.png" width="100%" heigt="auto">
+		            </div>
+		          </div>
+		        </div>
+		        <!-- 矢印 -->
+		        <!--<div class="splide__arrows">
+		          <button class="splide__arrow splide__arrow--prev button prev">
+		            <img src="" alt="" class="align-middle">
+		          </button>
+		          <button class="splide__arrow splide__arrow--next button next">
+		            <img src="" alt="" class="align-middle">
+		          </button>
+		        </div>-->
+		        </div>
+		      </section>
+		      <script>
+		        const target = '.splide';
+		        const options = {
+		          mediaQuery: 'min',
+		          // arrows: boolean = false,
+		          type: "loop",
+		          perPage: 1,
+		          gap: 24,
+		          autoplay: true,
+		          interval: 6000,
+		          speed: 1000,
+		          pauseOnFocus: false,
+		        }
+		        const mySplide = new Splide(target, options);
+		        mySplide.mount();
+		      </script>
+    		</div>
         </div>
 		<div class="works-title-block">
 		  <ul class="term-list">
