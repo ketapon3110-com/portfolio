@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>GA4計測設計・分析基盤構築 | Keita Saito Portfolio</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/top.css">
+  <link rel="stylesheet" href="../css/works.css" />
+  <link rel="stylesheet" href="../css/plide-core.min.css" />
+  <script src="../js/splide.min.js"></script>
+</head>
+<body class="case-page">
+  <div id="loading-screen">
+    <div class="loading-screen__inner">
+      <p class="loading-screen__label futura">Loading</p>
+      <p class="loading-screen__title futura">Keita Saito Portfolio</p>
+      <p class="loading-screen__percent futura" id="loading-percent">0%</p>
+      <div class="loading-screen__bar">
+        <div class="loading-screen__barFill" id="loading-barFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="../index.html" class="brand futura">Keita Saito</a>
+      <nav class="nav">
+        <a href="../index.html#works" class="futura">Works</a>
+        <a href="../index.html#skills" class="futura">Skills</a>
+        <a href="../index.html#contact" class="futura">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="works-single">
+      <div class="page-title-wrapper">
+        <h2 class="futura">WORKS<p class="eachTextAnime">制作物</p></h2>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="item-left">
+          <div class="eyecatch">
+            <div class="slider">
+              <section class="splide" aria-label="GA4計測設計・分析基盤構築">
+                <div class="splide-wrapper">
+                  <div class="splide__track">
+                    <div class="splide__list">
+                      <div class="splide__slide">
+                        <!-- ダッシュボード全体のサムネ -->
+                        <img src="../img/web02.jpg" width="100%" heigt="auto" alt="GA4ダッシュボード全体">
+                      </div>
+                      <div class="splide__slide">
+                        <!-- ファネル可視化 -->
+                        <img src="../img/web02_slider01.png" width="100%" heigt="auto" alt="ファネル可視化画面">
+                      </div>
+                      <div class="splide__slide">
+                        <!-- イベント設計イメージ -->
+                        <img src="../img/web02_slider02.png" width="100%" heigt="auto" alt="イベント設計イメージ">
+                      </div>
+                      <div class="splide__slide">
+                        <!-- レポート例 -->
+                        <img src="../img/web02_slider03.png" width="100%" heigt="auto" alt="レポート画面イメージ">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- arrows -->
+                  <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev button prev">
+                      <img src="../img/slider_arrow_icon.png" alt="" class="align-middle">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next button next">
+                      <img src="../img/slider_arrow_icon.png" alt="" class="align-middle">
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <script>
+                const target = '.splide';
+                const options = {
+                  mediaQuery: 'min',
+                  type: "loop",
+                  perPage: 1,
+                  gap: 24,
+                  autoplay: false,
+                  interval: 6000,
+                  speed: 1000,
+                  pauseOnFocus: false,
+                };
+                const mySplide = new Splide(target, options);
+                mySplide.mount();
+              </script>
+            </div>
+          </div>
+
+          <div class="works-title-block">
+            <ul class="term-list">
+              <li>GA4計測設計</li>
+              <li>分析基盤構築</li>
+              <li>ダッシュボード設計</li>
+              <li>施策検証フロー設計</li>
+            </ul>
+            <h3>GA4計測設計・分析基盤構築</h3>
+            <p class="category futura">Analysis / Direction / Tracking</p>
+            <div class="view-more is-works">
+              URL：社内利用のため非公開
+            </div>
+          </div>
+        </div>
+
+        <div class="item-right">
+          <dl>
+            <dd>自社EC全体の「どの施策が、どこまで届き、どこで離脱しているか」を見えるようにするため、GA4を用いた計測設計とダッシュボード基盤を構築した。</dd>
+          </dl>
+          <dl>
+            <hr>
+            <dt>使用ツール</dt>
+            <dd class="futura">
+              Google Analytics 4 / Looker Studio / ECForce / Spreadsheet / Excel
+            </dd>
+          </dl>
+          <dl>
+            <hr>
+            <dt>言語</dt>
+            <dd class="futura">
+              JavaScript / SQL
+            </dd>
+          </dl>
+          <dl>
+            <hr>
+            <dt>期間</dt>
+            <dd>
+              初期設計〜ダッシュボード公開まで：数か月<br>
+              以降は運用しながら継続的に改善
+            </dd>
+          </dl>
+          <dl>
+            <hr>
+            <dt>対応範囲</dt>
+            <dd>
+              計測方針の策定 / イベント設計 / パラメータ設計 / 実装ディレクション / テスト / ダッシュボード要件定義 / レポート運用支援
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="item-under">
+        <dl>
+          <dt class="section-title">概要</dt>
+          <dd>
+            自社ECサイトで行うUI改善やキャンペーン、CRM施策の結果が「どのページで、どの流れの中で効いているか」を共通の指標で見られるようにするため、GA4での計測設計とレポート基盤を整えた。<br>
+            これにより、「作って終わり」の状態から、数値を見ながら改善サイクルを回せる状態へと移行した。
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="section-title">背景と課題</dt>
+          <dd>
+            以前は、ページ単位のアクセス数やコンバージョン数は見られたものの、<br>
+            ・どの流入経路から来たユーザーが<br>
+            ・どの導線を通り<br>
+            ・どこで離脱しているのか<br>
+            を一つの流れとして見ることが難しかった。<br><br>
+
+            そのため、<br>
+            ・LPを作り替えても、どこが効いたのか判断しづらい<br>
+            ・LINEやメルマガからの流入が、どのくらい購入につながっているか見えにくい<br>
+            ・施策ごとのレポート形式が担当者ごとにバラバラで、比較しづらい<br>
+            といった状態になっていた。<br><br>
+
+            Web制作とCRM施策を横断して改善するには、「同じ物差し」で見られる分析基盤が必要だと考え、GA4を軸にした計測設計とレポート整備に着手した。
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="section-title">ゴール</dt>
+          <dd>
+            ・施策ごとの成果が、決まった指標で比較できる状態にすること<br>
+            ・流入〜回遊〜購入までの一連の動きを、ファネルとして把握できるようにすること<br>
+            ・Web制作・CRM・広告など、関係者全員が同じレポートを見て議論できる状態にすること<br><br>
+
+            をゴールに置き、<span class="underline">「誰が見ても同じ意味で理解できる数値」</span>を増やしていくことを意識して設計した。
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="section-title">アプローチ</dt>
+          <dd>
+            <h3 class="case-section__subtitle">1. 計測の棚卸しと項目整理</h3>
+            まず、既存で取れている数値と、意思決定に本当に必要な数値を整理した。<br>
+            ・売上会議や施策報告でよく使う指標<br>
+            ・UI改善やCRM施策の検証に必要な指標<br>
+            を洗い出し、紙やスプレッドシート上で「どの画面で、何を、どう測るか」を一覧化した。<br><br>
+
+            <h3 class="case-section__subtitle">2. イベント・パラメータ設計</h3>
+            次に、GA4で扱うイベントと、その中に含める情報を設計した。<br>
+            ・商品詳細閲覧、カート投入、購入開始、購入完了といった基本の流れ<br>
+            ・バナークリック、CVボタンクリック、スクロール率などの行動<br>
+            ・LINE・メルマガ・キャンペーンごとの識別情報<br>
+            をひとつひとつ定義し、命名ルールと値の入れ方を整理した。<br><br>
+
+            <h3 class="case-section__subtitle">3. 実装とテスト</h3>
+            ECForce上でのタグ埋め込みや、既存テンプレートとの兼ね合いを踏まえながら、JavaScriptでイベント送信の実装を行った。<br>
+            テスト用ビューを用意し、<br>
+            ・想定通りのイベントが発火しているか<br>
+            ・不要な二重計測が起きていないか<br>
+            ・パラメータに誤った値が入っていないか<br>
+            を一つずつ確認し、ログを見ながら調整した。<br><br>
+
+            <h3 class="case-section__subtitle">4. ダッシュボード設計と運用</h3>
+            最後に、Looker Studioを使って、施策検証用のダッシュボードを整えた。<br>
+            ・流入元別のファネル（流入→閲覧→カート→購入）<br>
+            ・LPごとの離脱ポイント<br>
+            ・LINE・メルマガ施策ごとの結果比較<br>
+            など、現場で実際に使う単位でページを分け、<span class="underline">「毎週の定例でそのまま使える」</span>ことを意識して構成した。
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="section-title">実装で意識したこと</dt>
+          <dd>
+            計測を増やし過ぎて管理できなくなることを避けるため、<br>
+            ・イベント名を増やしすぎない<br>
+            ・パラメータの意味を明確にして重複を避ける<br>
+            ・キャンペーン名や施策IDの付け方をルール化する<br>
+            ことを特に意識した。<br><br>
+
+            また、将来の画面改修や施策追加にも耐えられるよう、<br>
+            ・テンプレート単位で共通のイベントを使い回す<br>
+            ・サイト側のHTML構造が少し変わっても壊れにくいセレクタを使う<br>
+            といった点にも注意し、保守しやすい実装を心がけた。<br><br>
+
+            構造化データやページ構造の見直しなど、技術的なSEO改善と合わせて進めることで、<br>
+            表示速度・検索評価・行動データの三つを同時に整えることも意識した。
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="section-title futura">My Role</dt>
+          <dd>
+            計測の方針整理からイベント・パラメータ設計、実装ディレクション、テスト、ダッシュボード要件定義まで、一連の流れを担当した。<br>
+            Web制作・CRM・広告・経営層など関係者の「見たい数値」をヒアリングし、それぞれの要望を共通の指標に落とし込む部分をリード。<br>
+            <br>
+            導入後も、実際の運用で出てきた「この数値も欲しい」「ここは見ていないので簡略化したい」といった声を受けて、計測内容とレポート構成の微調整を継続的に行った。
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="section-title">数値・成果</dt>
+          <dd>
+            <h3 class="case-section__subtitle">施策検証のスピード向上</h3>
+            ・LP改修やキャンペーン実施のたびに個別で資料を作成する必要がなくなり、<br>
+            　定例会ではダッシュボードを見ながら議論できるようになった。<br><br>
+
+            <h3 class="case-section__subtitle">部門をまたいだ共通言語の形成</h3>
+            ・Web制作、CRM、広告、経営層が同じ画面を見ながら話せるようになり、<br>
+            　「なんとなく良さそう」から「この指標がこう変わったので次はここを触る」という会話に変わった。<br><br>
+
+            <h3 class="case-section__subtitle">改善サイクルの定着</h3>
+            ・施策ごとの成果が見えるようになったことで、<br>
+            　小さな改善を短い周期で繰り返すスタイルが定着した。<br>
+            ・継続率改善やF2転換率改善など、他施策の検証にもこの基盤を流用できるようになった。
+          </dd>
+        </dl>
+      </div>
+
+      <div class="works__subImg works__subImg--website">
+        <img class="works__pcImg active" src="../img/works02_pc.png" alt="pc">
+        <img class="works__spImg" src="../img/works02_sp.png" alt="sp">
+      </div>
+
+      <ul class="page-nav">
+        <li><a class="btnarrow-left" href="">前の作品</a></li>
+        <li><a class="btnarrow-right" href="">次の作品</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="../js/loading.js"></script>
+</body>
+</html>
